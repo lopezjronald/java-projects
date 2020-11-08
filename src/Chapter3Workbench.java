@@ -112,5 +112,49 @@ class Chapter3Workbench {
             System.out.println(word);
         }
 
+        /*
+        10. Convert the following if-else-if statement into a switch statement:
+            if (choice == 1)
+            {
+            System.out.println("You selected 1.");
+            }
+            else if (choice == 2 || choice == 3)
+            {
+            System.out.println("You selected 2 or 3.");
+            }
+            else if (choice == 4)
+            {
+            System.out.println("You selected 4.");
+            }
+            else
+            {
+            System.out.println("Select again please.");
+            }
+         */
+
+        int choice = 2;
+        switch (choice) {
+            case 1:
+                System.out.println("You selected 1.");
+                break;
+            case 2:
+            case 3:
+                System.out.println("You selected 2 or 3.");
+                break;
+            case 4:
+                System.out.println("You selected 4.");
+                break;
+            default:
+                System.out.println("Select again please.");
+        }
+
+        /*
+        14. Assume the int variable number contains the value 1234567. Write a statement that
+        uses System.out.printf to display the number as 1,234,567.
+         */
+
+        double numberValue = 1_234_567.0;
+        System.out.printf("%,.2f", numberValue);
+
     }
 }
